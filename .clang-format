@@ -1,57 +1,38 @@
 {
     "BasedOnStyle": "Microsoft",
-    "BreakBeforeBraces": "Custom",
+    "AccessModifierOffset": 2,
+    "AlignAfterOpenBracket": true,
+    "AlignArrayOfStructures": "Left",
+    "AlignConsecutiveAssignments": "None",
+    "AlignConsecutiveBitFields": "None",
+    "AlignConsecutiveDeclarations": "None",
+    "AlignConsecutiveMacros": "AcrossEmptyLines",
+    // 
+    "AllowAllArgumentsOnNextLine": false,
+    "AllowAllParametersOfDeclarationOnNextLine": false,
+    "AllowShortBlocksOnASingleLine": "Empty",
+    "AllowShortCaseExpressionOnASingleLine": false,
+    "AllowShortCaseLabelsOnASingleLine": false,
+    "AllowShortFunctionsOnASingleLine": "None",
+    "AllowShortIfStatementsOnASingleLine": "Never",
+    "AllowShortLambdasOnASingleLine": "Empty",
+    "AllowShortLoopsOnASingleLine": false,
+    //
+    "BinPackArguments": false,
     "BraceWrapping": {
-        "AfterControlStatement": "Never",
-        "AfterFunction": true,
-        "AfterClass": true,
         "AfterNamespace": true,
-        "AfterStruct": false,
+        "AfterExternBlock": true,
+        "AfterClass": true,
         "AfterEnum": false,
+        "AfterStruct": false,
         "AfterUnion": false,
-        "AfterExternBlock": false,
-        "BeforeCatch": false,
+        "AfterFunction": true,
+        "AfterControlStatement": "Never",
+        "AfterCaseLabel": false,
+        "BeforeCatch": true,
         "BeforeElse": false,
+        "BeforeLambdaBody": false,
         "BeforeWhile": false
     },
-    "ColumnLimit": 0,  // 关键：禁用列限制
-    "BinPackParameters": false,
-    "BinPackArguments": false,
-    "BinPackOperands": false,
-    "AllowAllParametersOfDeclarationOnNextLine": false,
-    "AllowAllArgumentsOnNextLine": false,
-    
-    // 关键：控制初始化列表
-    "BreakBeforeBraces": "Custom",
-    "BreakConstructorInitializers": "BeforeComma",  // 在逗号前换行
-    "Cpp11BracedListStyle": true,  // 使用C++11风格的初始化列表
-    
-    // 关键：禁止包装
-    "AllowShortFunctionsOnASingleLine": "None",
-    "AllowShortBlocksOnASingleLine": false,
-    "AllowShortCaseLabelsOnASingleLine": false,
-    "AllowShortIfStatementsOnASingleLine": false,
-    "AllowShortLoopsOnASingleLine": false,
-    
-    // 关键：惩罚值设置
-    "PenaltyExcessCharacter": 1000000,  // 极高的惩罚值
-    "PenaltyBreakBeforeFirstCallParameter": 1000000,
-    "PenaltyBreakAssignment": 1000000,
-    "PenaltyBreakString": 1000000,
-    "PenaltyBreakOpenParenthesis": 1000000,
-    "PenaltyBreakFirstLessLess": 1000000,
-    "PenaltyBreakTemplateDeclaration": 1000000,
-    
-    // 保持现有格式
-    "AlignAfterOpenBracket": "DontAlign",
-    "AlignOperands": false,
-    "AlignConsecutiveAssignments": false,
-    "AlignConsecutiveDeclarations": false,
-    "AlignConsecutiveMacros": false,
-    
-    // 其他
-    "KeepEmptyLinesAtTheStartOfBlocks": true,
-    "MaxEmptyLinesToKeep": 2,
-    "SpaceBeforeCpp11BracedList": false,
-    "SpaceBeforeCtorInitializerColon": true
+    "BreakBeforeBinaryOperators": "NonAssignment",
 }
